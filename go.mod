@@ -1,4 +1,4 @@
-module mailtrap
+module mailx
 
 go 1.23.4
 

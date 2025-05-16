@@ -1,8 +1,8 @@
 package main
 
 import (
-	"mailtrap/cmd"
-	"mailtrap/conf"
+	"mailx/cmd"
+	"mailx/conf"
 )
 
 func main() {
