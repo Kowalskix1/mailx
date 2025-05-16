@@ -1,0 +1,34 @@
+app:
+  name: "Mail Trap"
+  version: "0.0.1"
+  mode: "Development" # mode passible values: Development, Production
+
+logger:
+  logLevel: "DEBUG"
+  logFile: "/var/log/mailtrap.log" # TRACE, DEBUG, INFO, WARN, ERROR, FATAL, PANIC
+  logFileMaxSize: 10 # default is 10 MB
+  logFileMaxNums: 3 # default the max file is 3
+  logFileMaxKeepTime: 7 # default the file will keep in 7 days
+  logFileCompress: true 
+
+postgresql:
+  host: "127.0.0.1"
+  port: 15432
+  user: "postgres"
+  passwd: "MailTrap#2025!"
+
+redis:
+  host: "127.0.0.1"
+  port: 6380
+  passwd: "MailTrap#2025!"
+
+smtpd:
+  addr: "[::]:2525"
+  maxRecipients: 100
+  tlsCert: ""
+  tlsKey: ""
+  requireTls: false
+  requireStartTls: false
+  authFile: ""
+  authAllowInsecure: true
+  authAcceptAny: true
